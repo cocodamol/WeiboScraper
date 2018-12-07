@@ -80,7 +80,7 @@ if __name__ == "__main__":
 
     while cur <= maxpage-1:
         cur = cur + 1
-        driver.get('https://www.weibo.com/{}?&page={}'.format(accoutname, cur))
+        driver.get('https://www.weibo.com/{}?&page={}'.format(accountname, cur))
         time.sleep(20)
         scroll()
         scrape(get_feeds())
