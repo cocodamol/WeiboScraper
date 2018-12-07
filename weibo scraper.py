@@ -66,7 +66,7 @@ if __name__ == "__main__":
     # replace with WeiboID
     accountURL = 'https://www.weibo.com/{}?profile_ftype=1&is_all=1#_0'.format(accountname)
     driver = webdriver.Chrome()
-    start_page = 2
+    start_page = 1
     end_page = 6
     login(username, password)
 
@@ -80,7 +80,7 @@ if __name__ == "__main__":
 
     while cur <= maxpage-1:
         cur = cur + 1
-        driver.get('https://www.weibo.com/{}?&page={}'.format(accoutname, page))
+        driver.get('https://www.weibo.com/{}?&page={}'.format(accoutname, cur))
         time.sleep(20)
         scroll()
         scrape(get_feeds())
