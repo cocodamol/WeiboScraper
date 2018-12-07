@@ -63,7 +63,7 @@ if __name__ == "__main__":
     password = ""
     # replace with password
     accountname = ''
-    # replace with WeiboID
+    # replace with account ID you'd like to scrape  
     accountURL = 'https://www.weibo.com/{}?profile_ftype=1&is_all=1#_0'.format(accountname)
     driver = webdriver.Chrome()
     start_page = 1
