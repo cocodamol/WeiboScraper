@@ -78,7 +78,7 @@ if __name__ == "__main__":
     else:
         cur = start_page
 
-    while cur <= maxpage-1:
+    while cur <= end_page:
         cur = cur + 1
         driver.get('https://www.weibo.com/{}?&page={}'.format(accountname, cur))
         time.sleep(20)
